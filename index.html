@@ -4,11 +4,22 @@
 		<title>Delhi Sultanate-The Age of Wreath</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="https://delhisultanate.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="https://delhisultanate.github.io/assets/css/skick.css" />
-<!-- 		<link rel="stylesheet" href="https://delhisultanate.github.io/assets/css/slick-theme.css" /> -->
-		<link rel="stylesheet" href="https://delhisultanate.github.io/assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="https://delhisultanate.github.io/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/skick.css" />
+		<link rel="stylesheet" href="assets/css/slick-theme.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<Script>
+		$('a[href^="#"]').on('click', function(event) {
+			var target = $( $(this).attr('href') );
+			if( target.length ) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 500);
+			}
+		});
+		</script>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -20,7 +31,7 @@
 						<!-- Logo -->
 							<div id="logo">
 							
-							<img src="images/logo.png" alt="Delhi Dynasity" height="300" width="400" />
+							<img src="images/logo.png" alt="Delhi Dynasity" height="350" width="400" />
 								<h1><a href="index.html">Delhi Sultanate</a></h1>
 								<p>The Age of Wreath</p>
 							</div>
@@ -32,33 +43,17 @@
 							
 							
 						<!-- Nav -->
-							<!--nav id="nav">
+							<nav id="nav">
 								<ul>
 									<li class="current"><a href="index.html">Home</a></li>
-									<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Magna veroeros</a></li>
-											<li><a href="#">Etiam nisl</a></li>
-											<li>
-												<a href="#">Sed consequat</a>
-												<ul>
-													<li><a href="#">Lorem dolor</a></li>
-													<li><a href="#">Amet consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam nisl</a></li>
-													<li><a href="#">Sed feugiat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Nisl tempus</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="#intro-wrapper">Introduction</a></li>
+									<li><a href="#backgrounds">Backgrounds</a></li>
+									<li><a href="#dynasties">Dynasties</a></li>
+									<li><a href="#desecration">Destruction and Desecration</a></li>
+									<li><a href="#emperors">Emperors</a></li>
+									
 								</ul>
-							</nav-->
+							</nav>
 
 					</div>
 				</div>
@@ -76,6 +71,7 @@ The Delhi Sultanate reached its peak in terms of geographical reach, during the 
 
 The Delhi Sultanate caused destruction and desecration of politically important temples of enemy states as was the tradition in Pre-Islamic India,as well as led to the emergence of Indo-Islamic architecture.In 1526, it fell and was replaced by the Mughal Empire.
 						</p>
+						<span id="backgrounds"></span>
 						<!--ul class="actions">
 							<li><a href="#" class="button style3 big">Proceed</a></li>
 						</ul-->
@@ -83,7 +79,7 @@ The Delhi Sultanate caused destruction and desecration of politically important 
 				</div>
 
 			<!-- Main -->
-				<div class="wrapper style2">
+				<div class="wrapper style2" >
 					<div class="title">The Background</div>
 					<div id="main" class="container">
 					<!-- Image -->
@@ -152,12 +148,12 @@ The Delhi Sultanate caused destruction and desecration of politically important 
 									<li><a href="#" class="button style2 big">More Info</a></li>
 								</ul>
 							</section-->
-
+<span id="dynasties"></span>
 					</div>
 				</div>
 
 			<!-- Highlights -->
-				<div class="wrapper style3">
+				<div class="wrapper style3" id="dynasties">
 					<div class="title">The Dynasties</div>
 					<div id="highlights" class="container">
 						<div class="row 150%">
@@ -205,6 +201,7 @@ The Delhi Sultanate caused destruction and desecration of politically important 
 							</div>
 							
 						</div>
+						<span id="desecration"></span>
 					</div>
 				</div>
 
@@ -222,7 +219,101 @@ The first historical record of a campaign of destruction of temples and defaceme
 Beyond destruction and desecration, the Sultans of Delhi Sultanate in some cases had forbidden reconstruction of damaged Hindu, Jain and Buddhist temples, and they prohibited repairs of old temples or construction of any new temples. In certain cases, the Sultanate would grant a permit for repairs and construction of temples if the patron or religious community paid jizya (fee, tax). For example, a proposal by the Chinese to repair Himalayan Buddhist temples destroyed by the Sultanate army was refused, on the grounds that such temple repairs were only allowed if the Chinese agreed to pay jizya tax to the treasury of the Sultanate. In his memoirs, Firoz Shah Tughlaq describes how he destroyed temples and built mosques instead and killed those who dared build new temples.Other historical records from wazirs, amirs and the court historians of various Sultans of the Delhi Sultanate describe the grandeur of idols and temples they witnessed in their campaigns and how these were destroyed and desecrated.</p>
 							</p>
 						</header>
-						<hr />
+						
+						<!-- Features -->
+							<section id="features" >
+								<header class="style1">
+									<h2 id="emperors">The list of Sultans in the Delhi Sultanat</h2>
+									<br/>
+								</header>
+								<div class="feature-list">
+									<div class="row">
+										<div class="6u 12u(mobile)">
+											<section>
+												<h3 >Mamluk/Slave dynasty</h3>
+												<p>
+												<ol>
+												<li>Qutb-ud-din Aibak (1206-1210), appointed Naib us Sultanat by Mu'izz al-Din Muhammad, first Muslim Sultan of India, ruled with Delhi as capital</li>
+												<li>Aram Shah (1210-1211)</li>
+												<li>Shams ud din Iltutmish (1211-1236), son-in-law of Qut-bud-din Aibak</li>
+												<li>Rukn ud din Firuz (1236), son of Iltutmish</li>
+												<li>Raziyyat-ud-din Sultana (1236-1240), daughter of Iltutmish</li>
+												<li>Muiz ud din Bahram (1240-1242), son of Iltutmish</li>
+												<li>Ala ud din Masud (1242-1246), son of Ruk-nud-din
+												<li>Nasir ud din Mahmud (1246-1266), grandson of Iltutmish</li>
+												<li>Ghiyas ud din Balban (1266-1286), ex-slave, Father-in-law of Sultan Nasir ud din Mahmud</li>
+												<li>Muiz ud din Qaiqabad (1286-1290), grandson of Balban and son of Nasiruddin Bughra Khan</li>
+												</ol>												
+												</p>
+											</section>
+										</div>
+										<div class="6u 12u(mobile)">
+											<section>
+												<h3 >Khalji dynasty</h3>
+												<p>
+												<ul>
+												<li>Jalal ud din Firuz Khilji (1290-1296)</li>
+												<li>Alauddin Khalji (1296-1316)</li>
+												<li>Umar Khan Khalji (1316)</li>
+												<li>Qutb ud din Mubarak Shah Khalji (1316-1320)</li>
+												<li>Khusro Khan (1320)</li>
+												</ul>
+												</p>
+											</section>
+										</div>
+									</div>
+									<div class="row">
+										<div class="6u 12u(mobile)">
+											<section>
+												<h3 >Tughluq dynasty</h3>
+												<p>
+												<ul>
+												<li>Ghiyath al-Din Tughluq (1320-1325)</li>
+												<li>Muhammad bin Tughluq (1325-1351)</li>
+<li>Mahmud Ibn Muhammad (March 1351)</li>
+<li>Firuz Shah Tughluq (1351-1388)</li>
+<li>Ghiyas-ud-Din Tughlaq II (1388-1389)</li>
+<li>Abu Bakr Shah (1389-1390)</li>
+<li>Nasir ud din Muhammad Shah III (1390-1393)</li>
+<li>Sikander Shah I (March-April 1393)</li>
+<li>Nasir-ud-Din Mahmud Shah Tughluq (Sultan Mahmud II) at Delhi (1394-1412), son of Nasir uddin Muhammad, controlled the east[citation needed] from Delhi</li>
+<li>Nasir-ud-din Nusrat Shah Tughluq (1394-1414), grandson of Firuz Shah Tughluq, controlled the west from Firozabad</li>
+</ul>
+												</p>
+											</section>
+										</div>
+										<div class="6u 12u(mobile)">
+											<section>
+												<h3 >Sayyid dynasty</h3>
+												<p>
+												<ul>
+												<li>Khizr Khan (1414-1421)</li>
+												<li>Mubarak Shah (1421-1434)</li>
+												<li>Muhammad Shah (1434-1445)</li>
+												<li>Alam Shah (1445-1451)</li>
+												</ul>
+												</p>
+											</section>
+										</div>
+									</div>
+									<div class="row">
+										<div class="6u 12u(mobile)">
+											<section>
+												<h3 >Lodi dynasty</h3>
+												<p>
+												<ul>
+												<li>Bahlul Lodi (1451-1489)</li>
+<li>Sikandar Lodi (1489-1517)</li>
+<li>Ibrahim Lodi (1517-1526), defeated by Babur in the First Battle of Panipat on April 21, 1526</li>
+</ul>
+												</p>
+											</section>
+										</div>
+										
+									</div>
+								</div>
+								
+							</section>
 						<!--div class="row 150%">
 							<div class="6u 12u(mobile)">
 
@@ -304,6 +395,7 @@ Beyond destruction and desecration, the Sultans of Delhi Sultanate in some cases
 						</div>
 						<hr />
 					</div-->
+					
 					<div id="copyright">
 						<ul>
 							<li>&copy; Delhi Sultatnate</li><li>Design By: Team Delhi Sultanate</li>
@@ -315,16 +407,16 @@ Beyond destruction and desecration, the Sultans of Delhi Sultanate in some cases
 
 		<!-- Scripts -->
 			
-			<script src="https://delhisultanate.github.io/assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			
-			<script src="https://delhisultanate.github.io/assets/js/jquery.dropotron.min.js"></script>
-			<script src="https://delhisultanate.github.io/assets/js/slick.min.js"></script>
-			<script src="https://delhisultanate.github.io/assets/js/custom-slick.js"></script>
-			<script src="https://delhisultanate.github.io/assets/js/skel.min.js"></script>
-			<script src="https://delhisultanate.github.io/assets/js/skel-viewport.min.js"></script>
-			<script src="https://delhisultanate.github.io/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="https://delhisultanate.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="https://delhisultanate.github.io/assets/js/main.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/slick.min.js"></script>
+			<script src="assets/js/custom-slick.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 			
 			
 
